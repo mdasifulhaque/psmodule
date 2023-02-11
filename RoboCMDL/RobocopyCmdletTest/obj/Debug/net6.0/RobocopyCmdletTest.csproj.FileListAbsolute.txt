@@ -1,0 +1,15 @@
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\bin\Debug\net6.0\RobocopyCmdletTest.exe
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\bin\Debug\net6.0\RobocopyCmdletTest.deps.json
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\bin\Debug\net6.0\RobocopyCmdletTest.runtimeconfig.json
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\bin\Debug\net6.0\RobocopyCmdletTest.dll
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\bin\Debug\net6.0\RobocopyCmdletTest.pdb
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.csproj.AssemblyReference.cache
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.GeneratedMSBuildEditorConfig.editorconfig
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.AssemblyInfoInputs.cache
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.AssemblyInfo.cs
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.csproj.CoreCompileInputs.cache
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.dll
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\refint\RobocopyCmdletTest.dll
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.pdb
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\RobocopyCmdletTest.genruntimeconfig.cache
+G:\Files\Personal\psmodulelearning\RoboCMDL\RobocopyCmdletTest\obj\Debug\net6.0\ref\RobocopyCmdletTest.dll
