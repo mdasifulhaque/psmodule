@@ -46,7 +46,10 @@ public class MoveWithRobocopy : Cmdlet
 
     private string PathValidateAndCreate(string path)
     {
-        return "X";
+        var result = path;
+        var pathHasExtension = Path.HasExtension(path);
+        var isQualified = Path.IsPathFullyQualified(path);
+        return result;
     }
 
     private string ProcessLogFile(string path)
@@ -65,8 +68,8 @@ public class MoveWithRobocopy : Cmdlet
         else
         {
             WriteObject($"Processing user provided logFile {path}");
-            var isPathQualified = Path.IsPathFullyQualified(path);
-            var isPathHasExtension = Path.HasExtension(path);
+            result = PathValidateAndCreate(path);
+
         }
         return result;
     }
