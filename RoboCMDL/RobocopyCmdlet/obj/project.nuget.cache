@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cgyR90amalCcostfbdRX77FeMNCMRv0coAYKKGjT1KU2gq/XSITcGsF72z1C81WLQYjgt43gaqzDPlTMo8Uxjg==",
+  "success": true,
+  "projectFilePath": "G:\\Files\\Personal\\psmodulelearning\\RoboCMDL\\RobocopyCmdlet\\RoboCMDL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Md Asiful Haque\\.nuget\\packages\\powershellstandard.library\\5.1.1\\powershellstandard.library.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
