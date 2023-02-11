@@ -1,4 +1,5 @@
-﻿using System.Management.Automation;
+﻿using System.IO;
+using System.Management.Automation;
 using System.Security.AccessControl;
 
 namespace RoboCMDL;
@@ -48,7 +49,13 @@ public class MoveWithRobocopy : Cmdlet
         var isPathDefault = string.Equals(path, "move_with_robocopy.log");
         if (isPathDefault)
         {
-            WriteObject("Going with Default Log File");
+            WriteObject("Going with Default Log File {path}");
+            var currentPath = Directory.GetCurrentDirectory();
+            result = Path.Combine(currentPath, result);
+        }
+        else
+        {
+            WriteObject($"Processing user provided logFile {path}");
         }
         return result;
     }
