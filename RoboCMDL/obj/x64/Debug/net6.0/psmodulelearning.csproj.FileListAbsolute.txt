@@ -1,0 +1,12 @@
+G:\Files\Personal\psmodulelearning\bin\x64\Debug\net6.0\psmodulelearning.deps.json
+G:\Files\Personal\psmodulelearning\bin\x64\Debug\net6.0\psmodulelearning.dll
+G:\Files\Personal\psmodulelearning\bin\x64\Debug\net6.0\psmodulelearning.pdb
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.csproj.AssemblyReference.cache
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.GeneratedMSBuildEditorConfig.editorconfig
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.AssemblyInfoInputs.cache
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.AssemblyInfo.cs
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.csproj.CoreCompileInputs.cache
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.dll
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\refint\psmodulelearning.dll
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\psmodulelearning.pdb
+G:\Files\Personal\psmodulelearning\obj\x64\Debug\net6.0\ref\psmodulelearning.dll
