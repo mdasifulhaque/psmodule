@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RoboCMDL.Utilities
 {
-    internal class DriveUtilities
+    public class DriveUtilities
     {
+
+        public void ValidateAndCreatePath(string path)
+        {
+
+        }
     }
 }
