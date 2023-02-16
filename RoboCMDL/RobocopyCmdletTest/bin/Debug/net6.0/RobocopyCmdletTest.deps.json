@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "RobocopyCmdletTest/1.0.0": {
+        "dependencies": {
+          "psmodulelearning": "1.0.0"
+        },
         "runtime": {
           "RobocopyCmdletTest.dll": {}
+        }
+      },
+      "psmodulelearning/1.0.0": {
+        "runtime": {
+          "psmodulelearning.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RobocopyCmdletTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "psmodulelearning/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

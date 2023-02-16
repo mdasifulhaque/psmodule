@@ -28,7 +28,7 @@ public class MoveWithRobocopy : Cmdlet
 
     private string _logFile;
 
-
+    private readonly DriveUtilities _driveUtilities = new DriveUtilities();
     private string _argumentList = $"/A:-SH /E";
 
     protected override void BeginProcessing()
@@ -55,14 +55,14 @@ public class MoveWithRobocopy : Cmdlet
         {
             WriteObject($"Going with Default Log File {path}");
             var currentPath = Directory.GetCurrentDirectory();
-            result = PathValidateAndCreate(Path.Combine(currentPath, result));
+            result = _driveUtilities.PathValidateAndCreate(Path.Combine(currentPath, result));
             WriteObject($"logfile path would be D:= {result}");
 
         }
         else
         {
             WriteObject($"Processing user provided logFile {path}");
-            result = PathValidateAndCreate(path);
+            result = _driveUtilities.PathValidateAndCreate(path);
 
         }
         return result;

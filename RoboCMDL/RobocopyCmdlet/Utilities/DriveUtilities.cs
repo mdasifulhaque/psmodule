@@ -1,54 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RoboCMDL.Exceptions;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
-namespace RoboCMDL.Utilities
+namespace RoboCMDL.Utilities;
+
+public class DriveUtilities
 {
-    public class DriveUtilities
-    {
+    /*
+     * This variable will log the path of LogFile for Robocopy Operation
+     */
 
-        private string _logFilePath;
-        public string ValidateAndCorrectPath(string path)
+
+    private bool IsPathQualified(string path)
+    {
+        return Path.IsPathFullyQualified(path);
+    }
+
+    private string CleanPathFromIllegalChar(string path)
+    {
+        // return Regex.Replace(path, "[^a-zA-Z0-9_.-]+", "\\", RegexOptions.Compiled);
+        string invalidCharsRegex = @"[<>:""/\\|?*\x00-\x1f]";
+        string cleanedPath = Regex.Replace(path, invalidCharsRegex, "\\");
+        string absolutePath = Path.GetFileName(cleanedPath);
+
+        return absolutePath;
+
+    }
+
+    public string ValidateAndCorrectPath(string pathToValidate)
+    {
+        string validatedPath;
+
+
+        var isPathValid = IsPathQualified(pathToValidate);
+        if (isPathValid)
         {
-            _logFilePath = path;
-            var isValid = Path.IsPathFullyQualified(_logFilePath);
-            if (isValid)
+            Console.WriteLine("test 1");
+            validatedPath = pathToValidate;
+        }
+        else
+        {
+            var currentWorkingLocation = Directory.GetCurrentDirectory();
+            var combinedPath = Path.Combine(currentWorkingLocation, pathToValidate);
+            var logFileFullPath = Path.GetFullPath(combinedPath);
+            //Console.WriteLine($"The final path is {logFileFullPath}");
+
+            if (IsPathQualified(logFileFullPath))
             {
-                return _logFilePath;
+                Console.WriteLine($"{logFileFullPath} is qualified");
+                validatedPath = logFileFullPath;
             }
             else
             {
-                var currentLocation = Directory.GetCurrentDirectory();
-                var finalPath = Path.Combine(currentLocation, _logFilePath);
-                if (Path.IsPathFullyQualified(finalPath))
-                {
-
-                    _logFilePath = Path.GetFullPath(finalPath);
-                }
-                else
-                {
-                    return null;
-                }
+                validatedPath = "X";
             }
-
-            return _logFilePath;
         }
 
 
-        private string CreatePath(string path)
+        validatedPath = CleanPathFromIllegalChar(validatedPath);
+        Console.WriteLine($"Finally return would be  {validatedPath}");
+        return validatedPath;
+    }
+
+
+    private string CreatePath(string pathToCreate)
+    {
+        var getPathStatus = ValidateAndCorrectPath(pathToCreate);
+        if (getPathStatus != null)
         {
-            var getPathStatus = ValidateAndCorrectPath(path);
-            if (getPathStatus != null)
-            {
-
-            }
-            var result = path;
-            var pathHasExtension = Path.HasExtension(path);
-            var isQualified = Path.IsPathFullyQualified(path);
-            return result;
         }
+
+        var result = pathToCreate;
+        var pathHasExtension = Path.HasExtension(pathToCreate);
+        var isQualified = Path.IsPathFullyQualified(pathToCreate);
+        return result;
+    }
+
+    public string PathValidateAndCreate(string path)
+    {
+        return "X";
     }
 }

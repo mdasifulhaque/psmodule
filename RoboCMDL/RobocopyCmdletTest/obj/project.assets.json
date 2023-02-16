@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "psmodulelearning/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/psmodulelearning.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/psmodulelearning.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "psmodulelearning/1.0.0": {
+      "type": "project",
+      "path": "../RobocopyCmdlet/RoboCMDL.csproj",
+      "msbuildProject": "../RobocopyCmdlet/RoboCMDL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "psmodulelearning >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Md Asiful Haque\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\Files\\Personal\\psmodulelearning\\RoboCMDL\\RobocopyCmdlet\\RoboCMDL.csproj": {
+              "projectPath": "G:\\Files\\Personal\\psmodulelearning\\RoboCMDL\\RobocopyCmdlet\\RoboCMDL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
