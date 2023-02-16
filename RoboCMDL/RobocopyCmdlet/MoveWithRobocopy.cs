@@ -44,13 +44,7 @@ public class MoveWithRobocopy : Cmdlet
         ArrangeInput();
     }
 
-    private string PathValidateAndCreate(string path)
-    {
-        var result = path;
-        var pathHasExtension = Path.HasExtension(path);
-        var isQualified = Path.IsPathFullyQualified(path);
-        return result;
-    }
+
 
     private string ProcessLogFile(string path)
     {
